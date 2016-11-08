@@ -1,0 +1,527 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+img {
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg"); }
+
+/*字体图标*/
+/*界面大小*/
+html {
+  font-size: 100px; }
+
+body {
+  position: relative;
+  font-family: "微软雅黑",sans-serif;
+  font-size: 24px;
+  color: #e7ca06;
+  background: url(../imgs/background1.png) repeat-y 0 0;
+  background-size: 2000px 1px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+/*界面大小*/
+/*头部*/
+/*列表页*/
+#body1 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  /*头部*/
+  /*导航1*/
+  /*导航1*/
+  /*导航2*/
+  /*导航2*/
+  /*歌曲列表*/
+  /*歌曲列表*/
+  /*播放*/
+  /*播放*/
+  /*添加删除*/
+  /*添加删除*/ }
+  #body1 #header1 {
+    width: 100%;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    background: url(../imgs/header1.png) repeat-x 0 0;
+    background-size: 1px 0.88rem;
+    font-family: 'iconfont';
+    font-size: 0.44rem;
+    color: #fff;
+    padding: 0 0.36rem; }
+    #body1 #header1 div {
+      float: left; }
+    #body1 #header1 .fh {
+      width: 10%;
+      height: 100%;
+      text-align: center; }
+    #body1 #header1 h2 {
+      float: left;
+      width: 70%;
+      height: 100%;
+      font-size: 0.42rem;
+      text-align: center; }
+    #body1 #header1 .search {
+      width: 10%;
+      height: 100%;
+      text-align: left;
+      font-weight: 400; }
+    #body1 #header1 .xl {
+      width: 10%;
+      height: 100%;
+      text-align: center; }
+  #body1 #nav1 {
+    width: 100%;
+    height: 0.96rem;
+    border-bottom: 1px solid #4A4252; }
+    #body1 #nav1 div {
+      width: 25%;
+      float: left;
+      height: 0.95rem;
+      line-height: 0.95rem;
+      font-size: 0.36rem;
+      color: #fff;
+      text-align: center;
+      border-bottom: 0.06rem solid transparent; }
+    #body1 #nav1 div:nth-of-type(1) {
+      color: #e7ca06;
+      border-bottom-color: #e7ca06; }
+  #body1 #nav2 {
+    width: 100%;
+    height: 0.84rem;
+    border-bottom: 1px solid #4A4252; }
+  #body1 #center {
+    width: 100%;
+    height: 10.48rem;
+    position: relative;
+    overflow: hidden; }
+    #body1 #center ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto; }
+      #body1 #center ul li.active .he {
+        display: block; }
+      #body1 #center ul li {
+        width: 100%;
+        height: 1.68rem;
+        border-bottom: 1px solid #4A4252;
+        position: relative; }
+        #body1 #center ul li .he {
+          width: 4px;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #e7ca06;
+          display: none; }
+        #body1 #center ul li .li-l {
+          width: 80%;
+          height: 100%;
+          line-height: 0.84rem;
+          text-align: left;
+          float: left;
+          padding-left: 0.24rem; }
+          #body1 #center ul li .li-l h2 {
+            font-size: 0.36rem;
+            color: #FDFDFE;
+            font-weight: 400;
+            overflow: hidden; }
+          #body1 #center ul li .li-l h3 {
+            overflow: hidden;
+            font-size: 0.28rem; }
+            #body1 #center ul li .li-l h3 .span1 {
+              font-family: 'iconfont'; }
+            #body1 #center ul li .li-l h3 .span2 {
+              color: #9A959E;
+              padding-left: 2px; }
+        #body1 #center ul li .li-r {
+          width: 12%;
+          height: 100%;
+          float: right;
+          font-family: 'iconfont';
+          color: #FDFDFE;
+          line-height: 1.68rem;
+          font-size: 0.2rem;
+          text-align: left; }
+  #body1 #tab {
+    width: 100%;
+    height: 1.2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #2E2526; }
+    #body1 #tab .progress1 {
+      width: 100%;
+      height: 0.08rem;
+      position: relative;
+      background: #9A9494; }
+      #body1 #tab .progress1 .width {
+        width: 0;
+        height: 100%;
+        background: #e7ca06;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #body1 #tab .img {
+      width: 1.06rem;
+      height: 1.1rem;
+      float: left;
+      vertical-align: middle;
+      line-height: 1.1rem;
+      background-image: url(../imgs/bimg1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 61.9px 58.7px;
+      margin-right: 0.2rem; }
+    #body1 #tab .con {
+      width: 3.32rem;
+      height: 1.1rem;
+      float: left; }
+      #body1 #tab .con .t {
+        height: 0.6rem;
+        width: auto;
+        color: #FDFDFE;
+        line-height: 0.6rem;
+        font-size: 0.32rem;
+        text-align: left; }
+      #body1 #tab .con .b {
+        height: 0.5rem;
+        width: auto;
+        color: #9A959E;
+        font-size: 0.28rem;
+        text-align: left; }
+    #body1 #tab .play1, #body1 #tab .next1, #body1 #tab .list1 {
+      font-family: 'iconfont';
+      font-size: 0.6rem;
+      line-height: 1.1rem;
+      text-align: left; }
+    #body1 #tab .play1, #body1 #tab .next1 {
+      width: 1.04rem;
+      height: 1.1rem;
+      float: left; }
+    #body1 #tab .next1 {
+      font-size: 0.7rem;
+      font-weight: normal; }
+    #body1 #tab .list1 {
+      width: 0.84rem;
+      height: 1.1rem;
+      float: left; }
+  #body1 #vol {
+    width: 100%;
+    height: 5.55rem;
+    background: #18181e;
+    opacity: 0.9;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none; }
+    #body1 #vol .share {
+      width: 100%;
+      height: 4.58rem;
+      background: #1C1B23;
+      padding: 0.32rem 0.4rem;
+      padding-bottom: none;
+      color: #fff; }
+      #body1 #vol .share .box {
+        width: 25%;
+        height: 2.12rem;
+        float: left;
+        text-align: center; }
+        #body1 #vol .share .box .ico {
+          font-family: 'iconfont';
+          display: inline-block;
+          width: 1.26rem;
+          height: 1.26rem;
+          background: #17161C;
+          border-radius: 6px;
+          line-height: 1.26rem;
+          text-align: center;
+          font-size: 0.7rem; }
+        #body1 #vol .share .box .wz {
+          display: inline-block;
+          width: 100%;
+          height: 0.49rem;
+          text-align: center;
+          line-height: bottom;
+          font-size: 0.26rem; }
+    #body1 #vol .close1 {
+      width: 100%;
+      height: 0.97rem;
+      color: #fff;
+      font-size: 0.3rem;
+      line-height: 0.97rem;
+      text-align: center; }
+
+/*列表页*/
+/*播放页*/
+/*头*/
+#body2 {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: url(../imgs/tu.jpg) no-repeat center 0;
+  background-size: 498px 750px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /*头*/
+  /*歌词*/
+  /*歌词*/
+  /*进度条*/
+  /*进度条*/
+  /*tab栏*/
+  /*tab栏*/
+  /*播放*/
+  /*播放*/
+  /*音量键*/
+  /*音量键*/ }
+  #body2 #header {
+    width: 100%;
+    height: 1.4rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 0.2rem;
+    font-family: 'iconfont';
+    color: #ECEEED; }
+    #body2 #header div {
+      height: 1.4rem;
+      float: left; }
+    #body2 #header .l {
+      width: 20%;
+      text-align: left;
+      padding-left: 0.24rem;
+      line-height: 1.4rem; }
+    #body2 #header .r {
+      width: 20%;
+      text-align: right;
+      padding-right: 0.24rem;
+      line-height: 1.4rem; }
+    #body2 #header .c {
+      width: 60%;
+      text-align: center; }
+      #body2 #header .c div {
+        height: 0.7rem;
+        width: 100%;
+        font-weight: 600;
+        overflow: hidden;
+        line-height: 0.7rem; }
+      #body2 #header .c .name {
+        color: #ECEEED;
+        font-size: 0.38rem; }
+      #body2 #header .c .author {
+        color: #8A8B8F;
+        font-size: 0.32rem; }
+  #body2 #audio {
+    position: fixed;
+    top: 300px; }
+  #body2 #gc {
+    width: 100%;
+    height: 8.6rem; }
+  #body2 #jdt {
+    width: 100%;
+    height: 1.17rem;
+    padding: 0.41rem 0.2rem;
+    color: #FFFCFF; }
+    #body2 #jdt .currentTime {
+      float: left;
+      text-align: left;
+      display: inline-block;
+      height: 0.35rem;
+      width: 44px;
+      line-height: 0.35rem;
+      font-size: 0.28rem; }
+    #body2 #jdt .duration {
+      float: right;
+      text-align: right;
+      display: inline-block;
+      height: 0.35rem;
+      width: 44px;
+      line-height: 0.35rem;
+      font-size: 0.28rem; }
+    #body2 #jdt .progress {
+      width: 5rem;
+      float: left;
+      height: 0.1rem;
+      background: rgba(255, 255, 255, 0.7);
+      margin: 0.125rem 0.1rem;
+      border-radius: 4px;
+      position: relative; }
+      #body2 #jdt .progress .btn1 {
+        width: 0.35rem;
+        height: 0.35rem;
+        border-radius: 50%;
+        background: #FFDA2F;
+        position: absolute;
+        left: -0.175rem;
+        top: 50%;
+        margin-top: -0.175rem;
+        opacity: 0.8; }
+      #body2 #jdt .progress .btn2 {
+        width: 0;
+        height: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #FFDA2F;
+        border-radius: 4px; }
+  #body2 #tab {
+    width: 100%;
+    height: 1.19rem;
+    padding: 0.36rem 0.30rem; }
+    #body2 #tab div {
+      width: 20%;
+      height: 0.47rem;
+      float: left;
+      line-height: 0.47rem;
+      font-family: 'iconfont';
+      font-size: 0.36rem;
+      color: #999;
+      text-align: center;
+      font-weight: 600; }
+  #body2 #bf {
+    width: 100%;
+    height: 1.14rem;
+    line-height: 1.14rem; }
+    #body2 #bf div {
+      float: left;
+      width: 20%;
+      text-align: center;
+      font-family: 'iconfont';
+      color: #FFDA2F;
+      font-weight: 400; }
+    #body2 #bf .pre {
+      font-size: 0.75rem;
+      font-weight: 600; }
+    #body2 #bf .next {
+      font-size: 0.75rem; }
+    #body2 #bf .play {
+      font-size: 1.14rem; }
+    #body2 #bf .methods {
+      font-size: 0.5rem; }
+    #body2 #bf .list {
+      font-size: 0.36rem;
+      font-weight: 600; }
+  #body2 #vol {
+    width: 100%;
+    height: 6.6rem;
+    background: #18181e;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none; }
+    #body2 #vol .share {
+      width: 100%;
+      height: 4.58rem;
+      background: #1C1B23;
+      padding: 0.32rem 0.4rem;
+      padding-bottom: none;
+      color: #fff; }
+      #body2 #vol .share .box {
+        width: 25%;
+        height: 2.12rem;
+        float: left;
+        text-align: center; }
+        #body2 #vol .share .box .ico {
+          font-family: 'iconfont';
+          display: inline-block;
+          width: 1.26rem;
+          height: 1.26rem;
+          background: #17161C;
+          border-radius: 6px;
+          line-height: 1.26rem;
+          text-align: center;
+          font-size: 0.7rem; }
+        #body2 #vol .share .box .wz {
+          display: inline-block;
+          width: 100%;
+          height: 0.49rem;
+          text-align: center;
+          line-height: bottom;
+          font-size: 0.26rem; }
+    #body2 #vol .yl {
+      width: 100%;
+      height: 1.02rem;
+      padding: 0.33rem 0;
+      border-bottom: 1px solid #232329;
+      border-top: 1px solid #232329; }
+      #body2 #vol .yl .volume {
+        width: 6.64rem;
+        height: 0.1rem;
+        margin-top: 0.13rem;
+        background: #fff;
+        position: relative;
+        margin-left: 0.66rem; }
+        #body2 #vol .yl .volume .btn3 {
+          font-family: 'iconfont';
+          font-size: 0.35rem;
+          color: #fff;
+          display: inline-block;
+          position: absolute;
+          left: -0.4rem;
+          top: 50%;
+          margin-top: -0.175rem; }
+        #body2 #vol .yl .volume .btn4 {
+          width: 0.3rem;
+          height: 0.3rem;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          right: -0.15rem;
+          top: 50%;
+          margin-top: -0.15rem;
+          opacity: 0.8; }
+        #body2 #vol .yl .volume .btn5-w {
+          width: 0;
+          height: 0.1rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #fff;
+          border-radius: 4px; }
+    #body2 #vol .close1 {
+      width: 100%;
+      height: 0.97rem;
+      color: #fff;
+      font-size: 0.3rem;
+      line-height: 0.97rem;
+      text-align: center; }
+
+/*播放页*/
