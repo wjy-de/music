@@ -394,7 +394,6 @@ body {
     -moz-box-sizing: border-box;
     background-color: transparent;
     position: relative;
-    z-index: 100;
     overflow: hidden; }
     #body2 .gc .gc-box {
       width: 100%;
