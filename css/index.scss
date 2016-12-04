@@ -61,12 +61,12 @@ body{
     z-index: 3;
     #header1{
         width: 100%;
-        height: 0.92rem;
-        line-height: 0.92rem;
+        height: 0.82rem;
+        line-height: 0.82rem;
         background: url(../imgs/header1.png) repeat-x 0 0;
-        background-size: 1px 0.88rem;
+        background-size: 1px 0.82rem;
         font-family: 'iconfont';
-        font-size: 0.44rem;
+        font-size: 0.42rem;
         color: #fff;
         padding:0 0.36rem;
         div{
@@ -81,7 +81,7 @@ body{
             float: left;
             width: 70%;
             height: 100%;
-            font-size: 0.42rem;
+            font-size: 0.36rem;
             text-align: center;
         }
         .search{
@@ -101,13 +101,14 @@ body{
     /*导航1*/
     #nav1{
         width: 100%;
-        height: 0.96rem;
+        height: 0.86rem;
+        box-sizing: border-box;
         border-bottom: 1px solid #4A4252;
         div{
             width: 25%;
             float: left;
-            height: 0.95rem;
-            line-height: 0.95rem;
+            height: 0.85rem;
+            line-height: 0.85rem;
             font-size: 0.36rem;
             color: #fff;
             text-align: center;
@@ -124,8 +125,34 @@ body{
     /*导航2*/
     #nav2{
         width: 100%;
-        height: 0.84rem;
+        height: 0.76rem;
         border-bottom: 1px solid #4A4252;
+        box-sizing: border-box;
+        padding: 0 0.22rem 0 0.28rem;
+        color: #fff;
+        .l{
+            width: 50%;
+            height: 0.76rem;
+            float: left;
+            text-align: left;
+            line-height: 0.76rem;
+            font-size: 0.32rem;
+            span{
+                font-family: 'iconfont';
+                font-size: 0.34rem;
+                color: #e7ca06;
+                margin-right: 0.18rem;
+            }
+        }
+        .r{
+            width: 50%;
+            height: 0.76rem;
+            float: left;
+            line-height: 0.76rem;
+            text-align: right;
+            font-size: 0.26rem;
+            
+        }
     }
     /*导航2*/
     
@@ -148,8 +175,10 @@ body{
             }
             li{
                 width: 100%;
-                height: 1.68rem;
-                border-bottom: 1px solid #4A4252;
+                height: 1.16rem;
+                box-sizing: border-box;
+                border-bottom: 1px solid #483f50;
+                border-top: 1px solid #483f50;
                 position: relative;
                 .he{
                     width: 4px;
@@ -163,19 +192,21 @@ body{
                 .li-l{
                     width: 80%;
                     height: 100%;
-                    line-height: 0.84rem;
                     text-align: left;
                     float: left;
-                    padding-left: 0.24rem;
+                    padding-left: 0.22rem;
                     h2{
-                        font-size: 0.36rem;
+                        font-size: 0.34rem;
                         color: #FDFDFE;
                         font-weight: 400;
                         overflow: hidden;
+                        line-height: 0.62rem;
                     }
                     h3{
                         overflow: hidden;
                         font-size: 0.28rem;
+                        line-height: 0.38rem;
+                        overflow: hidden;
                         .span1{
                             font-family: 'iconfont';
             }
@@ -192,8 +223,8 @@ body{
         float: right;
         font-family: 'iconfont';
                     color: #FDFDFE;
-                    line-height: 1.68rem;
-                    font-size: 0.2rem;
+                    line-height: 1.16rem;
+                    font-size: 0.18rem;
                     text-align: left;
                 }
             }
@@ -205,14 +236,14 @@ body{
     /*播放*/
     #tab{
         width: 100%;
-        height: 1.2rem;
+        height: 1.04rem;
         position: fixed;
         left: 0;
         bottom: 0;
         background: #2E2526;
         .progress1{
             width: 100%;
-            height: 0.08rem;
+            height: 0.04rem;
             position: relative;
             background: #9A9494;
            .width{
@@ -226,10 +257,10 @@ body{
         }
         .img{
             width: 1.06rem;
-            height: 1.1rem;
+            height: 1rem;
             float: left;
             vertical-align: middle;
-            line-height: 1.1rem;
+            line-height: 1rem;
             background-image: url(../imgs/bimg1.png);
             background-repeat: no-repeat;
             background-position: center center;
@@ -238,33 +269,36 @@ body{
         }
         .con{
             width: 3.32rem;
-            height: 1.1rem;
+            height: 1rem;
             float: left;
             .t{
-                height: 0.6rem;
-                width: auto;
+                height: 0.5rem;
+                width: 94%;
                 color: #FDFDFE;
-                line-height: 0.6rem;
+                line-height: 0.5rem;
                 font-size: 0.32rem;
                 text-align: left;
+                overflow: hidden;
             }
             .b{
                 height: 0.5rem;
-                width: auto;
+                width: 94%;
                 color:#9A959E;
                 font-size: 0.28rem;
                 text-align: left;
+                overflow: hidden;
+                line-height: 0.3rem;
             }
         }
         .play1,.next1,.list1{
             font-family: 'iconfont';
             font-size: 0.6rem;
-            line-height: 1.1rem;
+            line-height: 1rem;
             text-align: left;
         }
         .play1,.next1{
             width: 1.04rem;
-            height: 1.1rem;
+            height: 1rem;
             float: left;
         }
         .next1{
@@ -273,7 +307,7 @@ body{
         }
         .list1{
             width: 0.84rem;
-            height: 1.1rem;
+            height: 1rem;
             float: left;
         }
     }
@@ -350,23 +384,22 @@ body{
     top: 0;
     left: 0;
     z-index: 2;
-//  display: none;
     #header{
         width: 100%;
-        height: 1.4rem;
+        height: 1.2rem;
         background: rgba(0,0,0,0.2);
         padding: 0 0.2rem;
         font-family: 'iconfont';
         color: #ECEEED;
         div{
-            height: 1.4rem;
+            height: 1.2rem;
             float: left;
         }
         .l{
             width: 20%;
             text-align: left;
             padding-left: 0.24rem;
-            line-height: 1.4rem;
+            line-height: 1.2rem;
         }
         .r{
             width: 20%;
@@ -376,21 +409,25 @@ body{
         }
         .c{
             width: 60%;
+            height: 100%;
             text-align: center;
             div{
-                height: 0.7rem;
+                
                 width: 100%; 
                 font-weight: 600;
                 overflow: hidden;
-                line-height: 0.7rem;
+                
             }
             .name{
+                height: 0.74rem;
                 color:#ECEEED;
-                font-size: 0.38rem;           
+                font-size: 0.38rem;  
+                line-height: 0.74rem;         
             }
             .author{
+                height: 0.46rem;
                 color:#8A8B8F;
-                font-size: 0.32rem;
+                font-size: 0.30rem;
             }
         }
     }
@@ -402,9 +439,36 @@ body{
     }
     
     /*歌词*/
-    #gc{
+    .gc{
         width: 100%;
         height: 8.6rem;
+        border-width: 1rem 0.1rem 0.65rem;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: transparent;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        .gc-box{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        p{
+            line-height: 0.9rem;
+            font-size: 0.38rem;
+            color: #ECEEED;;
+            text-align: center;
+        }
+    }
+    .pad{
+        border-top-width: 6rem;
     }
     /*歌词*/
    
@@ -436,7 +500,7 @@ body{
             width: 5rem;
             float: left;
             height: 0.1rem;
-            background: rgba(255,255,255,0.7);
+            background: rgba(0,0,0,0.3);
             margin: 0.125rem 0.1rem;
             border-radius: 4px;
             position: relative;
@@ -475,7 +539,7 @@ body{
             float: left;
             line-height: 0.47rem;
             font-family: 'iconfont';
-            font-size: 0.36rem;
+            font-size: 0.40rem;
             color: #999;
             text-align: center;
             font-weight: 600;
